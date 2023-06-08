@@ -1,11 +1,11 @@
-/*questa funzione ci permette di creare 77 numberi casuali dentro un array*/
+/*questa funzione ci permette di creare 1 77 numberi casuali dentro un array*/
 
 const numbers = [];
 
 const randomNumberGenerator = function () {
   const number = [];
   for (let i = 0; i < 77; i++) {
-    const randomNumber = Math.floor(Math.random() * 77) + 1;
+    const randomNumber = Math.floor(Math.random());
     numbers.push(randomNumber);
     number.push(randomNumber);
   }
