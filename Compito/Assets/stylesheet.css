@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Quattrocento+Sans:ital,wght@0,400;0,700;1,400&display=swap");
+
+/* font-family: 'Quattrocento Sans', sans-serif; */
+
+/* ---------------------------------------------------------- HTML settings -------------------------------------------*/
+
+html {
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 0;
+  font-family: "Quattrocento Sans", sans-serif;
+  font-weight: 400;
+}
+/* ---------------------------------------------------------- BODY settings -------------------------------------------*/
+body {
+  width: 800px;
+  max-height: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 0;
+  margin-top: 0;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  text-align: center;
+  background-image: url(/Compito/Assets/Senior-and-Elderly.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: 80%;
+}
+
+h1 {
+  font-size: 3em;
+  padding: 10px;
+  font-family: "Quattrocento Sans", sans-serif;
+  font-weight: 700;
+}
+h2 {
+  font-size: 2.5em;
+  padding: 10px;
+  font-family: "Quattrocento Sans", sans-serif;
+  font-weight: 700;
+}
+h3 {
+  font-size: 2em;
+  padding: 10px;
+  font-family: "Quattrocento Sans", sans-serif;
+  font-weight: 700;
+}
+h4 {
+  font-size: 1.5em;
+  padding: 10px;
+  font-family: "Quattrocento Sans", sans-serif;
+  font-weight: 700;
+}
+h5 {
+  font-size: 1em;
+  padding: 10px;
+  font-family: "Quattrocento Sans", sans-serif;
+  font-weight: 700;
+}
+h6 {
+  font-size: 0.5em;
+  padding: 10px;
+  font-family: "Quattrocento Sans", sans-serif;
+  font-weight: 700;
+}
+p {
+  font-size: 1.3em;
+  padding: 10px;
+}
+
+div {
+  width: 100%;
+  padding: 10px;
+  margin: 0;
+  line-height: 1.5;
+  display: block;
+}
+
+#title {
+  color: #2b43be;
+  font-size: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  background-color: rgba(168, 235, 109, 0.8);
+}
+
+#bingoBoard {
+  width: 760px;
+  height: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 80px;
+  margin-bottom: 100px;
+  border: solid;
+  border-width: 2px;
+  background-color: rgba(244, 179, 13, 0.8);
+}
+
+#table tr {
+  max-width: 760px;
+  max-height: 770px;
+}
+
+tr td {
+  width: 110px;
+  height: 110px;
+  border: solid;
+  border-color: rgb(200, 78, 7);
+  text-align: center;
+  margin: 1em;
+}
+
+#numberGeneratorButton {
+  margin-top: 50px;
+  width: 300px;
+  height: 100px;
+  font-family: "Quattrocento Sans", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  color: rgb(10, 156, 54);
+}
