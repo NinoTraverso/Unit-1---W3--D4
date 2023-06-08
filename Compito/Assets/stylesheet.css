@@ -90,7 +90,7 @@ div {
 
 #bingoBoard {
   width: 760px;
-  height: 1320px;
+  max-height: 1370px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 80px;

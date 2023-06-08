@@ -5,7 +5,7 @@ const numbers = [];
 const randomNumberGenerator = function () {
   const number = [];
   for (let i = 0; i < 77; i++) {
-    const randomNumber = Math.floor(Math.random());
+    const randomNumber = Math.floor(Math.random()*77)+1;
     numbers.push(randomNumber);
     number.push(randomNumber);
   }
