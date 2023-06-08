@@ -5,13 +5,12 @@ const numbers = [];
 const randomNumberGenerator = function () {
   const number = [];
   for (let i = 0; i < 77; i++) {
-    const randomNumber = Math.floor(Math.random()*77)+1;
+    const randomNumber = Math.floor(Math.random() * 77) + 1;
     numbers.push(randomNumber);
     number.push(randomNumber);
   }
   return number;
 };
-
 function displayNumbersGenerated(click) {
   click.preventDefault();
   const randomNumbers = randomNumberGenerator();
