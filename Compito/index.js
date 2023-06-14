@@ -1,26 +1,23 @@
-/*questa funzione ci permette di creare 1 77 numberi casuali dentro un array*/
+const numberGeneratorButton = document.getElementById("numberGeneratorButton");
 
-const numbers = [];
+const randomNumbers = [];
 
-const randomNumberGenerator = function () {
-  const number = [];
-  for (let i = 0; i < 77; i++) {
-    const randomNumber = Math.floor(Math.random() * 77) + 1;
-    numbers.push(randomNumber);
-    number.push(randomNumber);
-  }
-  return number;
-};
-function displayNumbersGenerated(click) {
-  click.preventDefault();
-  const randomNumbers = randomNumberGenerator();
+numberGeneratorButton.addEventListener("click", randomNumberGenerator);
+
+function randomNumberGenerator() {
+  const number = Math.floor(Math.random() * 76) + 1;
+
+  randomNumbers.push(number);
+
   console.log(randomNumbers);
 }
 
-console.log("Your numbers are:", numbers);
+const table = document.getElementById("table");
+const tdSection = document.querySelector("td");
+const tdInnerText = tdSection.innerText;
 
-/*qui mettiamo il codice che ci permette di creare una nuova lista random di numri*/
-const clickToGenerateNumber = document.getElementById("numberGeneratorButton");
-clickToGenerateNumber.addEventListener("click", displayNumbersGenerated);
-
-/*qui creiamo un modo per mettere i numeri generati dentro ogni td del table(id="table") del div(id="bingoBoard")*/
+function compareTableNumbers() {
+  if (randomNumbers.indexOf(parseInt(tdSection.innerText)) !== -1) {
+    tdSection.style.backgroundColor = "royalblue";
+  } else console.log(randomNumbers);
+}

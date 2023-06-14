@@ -130,3 +130,7 @@ tr td {
   border-color: rgb(200, 78, 7);
   background-color: crimson;
 }
+
+.cambioSfondo {
+  background-color: royalblue
+}
