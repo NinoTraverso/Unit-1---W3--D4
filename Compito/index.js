@@ -1,4 +1,3 @@
-
 function tdBackgroundChange(numbers) {
   let getAllTds = document.querySelectorAll("#bingoBoard td");
   for (let i = 0; i < getAllTds.length; i++) {
@@ -6,7 +5,7 @@ function tdBackgroundChange(numbers) {
     const allTdsNumbers = parseInt(allOfTd.textContent);
 
     if (numbers.includes(allTdsNumbers)) {
-      allOfTd.setAttribute("style", "background-color: green");
+      allOfTd.setAttribute("style", "background-color: olive");
     }
   }
 }
