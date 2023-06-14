@@ -1,23 +1,21 @@
-const numberGeneratorButton = document.getElementById("numberGeneratorButton");
 
-const randomNumbers = [];
+function changeBackground(numbers) {
+  let getAllTds = document.querySelectorAll("#bingoBoard td");
+  for (let i = 0; i < getAllTds.length; i++) {
+    const allOfTd = getAllTds[i];
+    const allTdsNumbers = parseInt(allOfTd.textContent);
 
-numberGeneratorButton.addEventListener("click", randomNumberGenerator);
-
-function randomNumberGenerator() {
-  const number = Math.floor(Math.random() * 76) + 1;
-
-  randomNumbers.push(number);
-
-  console.log(randomNumbers);
+    if (numbers.includes(allTdsNumbers)) {
+      allOfTd.setAttribute("style", "background-color: green");
+    }
+  }
 }
 
-const table = document.getElementById("table");
-const tdSection = document.querySelector("td");
-const tdInnerText = tdSection.innerText;
+const numberGeneratorButton = document
+  .getElementById("numberGeneratorButton")
+  .addEventListener("click", function (event) {
+    event.preventDefault();
+    const randomNumbers = [Math.floor(Math.random() * 77) + 1];
 
-function compareTableNumbers() {
-  if (randomNumbers.indexOf(parseInt(tdSection.innerText)) !== -1) {
-    tdSection.style.backgroundColor = "royalblue";
-  } else console.log(randomNumbers);
-}
+    changeBackground(randomNumbers);
+  });
