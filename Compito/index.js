@@ -1,5 +1,5 @@
 
-function changeBackground(numbers) {
+function tdBackgroundChange(numbers) {
   let getAllTds = document.querySelectorAll("#bingoBoard td");
   for (let i = 0; i < getAllTds.length; i++) {
     const allOfTd = getAllTds[i];
@@ -17,5 +17,5 @@ const numberGeneratorButton = document
     event.preventDefault();
     const randomNumbers = [Math.floor(Math.random() * 77) + 1];
 
-    changeBackground(randomNumbers);
+    tdBackgroundChange(randomNumbers);
   });
